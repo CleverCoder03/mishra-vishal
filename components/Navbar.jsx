@@ -2,12 +2,10 @@
 import React, { useRef, useState } from "react";
 import { useGSAP } from "@gsap/react";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
 import gsap from "gsap";
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
-  const pathname = usePathname("/");
   const menuRef = useRef(null);
   const colorRef = useRef(null);
   const logoRef = useRef(null);
@@ -44,12 +42,6 @@ const Navbar = () => {
         }
       );
 
-      //   gsap.to([colorRef.current, logoRef.current], {
-      //     color: "white",
-      //     duration: 0.4,
-      //     ease: "power1",
-      //   });
-
       gsap.fromTo(
         navLinksRef.current,
         {
@@ -81,12 +73,6 @@ const Navbar = () => {
         ease: "power1.inOut",
       });
 
-      //   gsap.to([colorRef.current, logoRef.current], {
-      //     color: "black",
-      //     delay: 0.4,
-      //     ease: "power1",
-      //   });
-
       // Reset nav links
       gsap.fromTo(
         navLinksRef.current,
@@ -111,15 +97,6 @@ const Navbar = () => {
         { yPercent: 100, opacity: 0, duration: 0.4, ease: "expo.out" }
       );
     }
-
-    // gsap.fromTo(
-    //   navRef.current,
-    //   {
-    //     yPercent: -100,
-    //     opacity: 0
-    //   },
-    //   { yPercent: 0, opacity: 1, duration: 1, delay: 2, ease: "power3.in" }
-    // );
   }, [toggle]);
   return (
     <>

@@ -1,6 +1,7 @@
 import Image from "next/image";
-import globeSVG from "../assets/globe.svg";
+import globeSVG from "@/public/assets/globe.svg";
 import { Component } from "./ui/etheral-shadow";
+import Button from "./Button";
 
 const Hero = () => {
   return (
@@ -34,9 +35,7 @@ const Hero = () => {
             <h1 className="text-lg md:text-xl">
               I&apos;ll help you make a lasting impression online.
             </h1>
-            <button className="bg-white text-black w-fit px-5 py-2.5 font-semibold hover:bg-gray-200 transition-colors">
-              Start Project
-            </button>
+            <Button className={"bg-white text-black hover:bg-gray-200"} />
           </div>
         </div>
       </div>
