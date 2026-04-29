@@ -1,4 +1,5 @@
 import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
 
 export default function Home() {
   return (
@@ -6,6 +7,7 @@ export default function Home() {
       {/* Navbar */}
       <Navbar />
       {/* Hero Section */}
+      <Hero />
       {/* About Section */}
       {/* Project Section */}
       {/* Client Testimonial */}
