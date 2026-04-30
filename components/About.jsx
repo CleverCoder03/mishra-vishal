@@ -4,7 +4,7 @@ import Button from "./Button";
 
 const About = () => {
   return (
-    <div className="px-5 py-30 lg:py-50 md:px-12 xl:px-18 border-b border-gray-400">
+    <div className="px-5 py-30 lg:py-40 md:px-12 xl:px-18 border-b border-gray-400">
       <div className="flex flex-col lg:flex-row gap-10">
         <div className="flex lg:flex-col lg:w-1/2 justify-between">
           <h1 className="uppercase font-semibold flex items-center gap-2">
