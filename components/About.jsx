@@ -4,18 +4,22 @@ import Button from "./Button";
 
 const About = () => {
   return (
-    <div className="px-5 py-30 lg:py-40 md:px-12 xl:px-18 border-b border-gray-400">
+    <div id="about" className="px-5 py-30 lg:py-40 md:px-12 xl:px-18 border-b border-gray-400">
       <div className="flex flex-col lg:flex-row gap-10">
         <div className="flex lg:flex-col lg:w-1/2 justify-between">
           <h1 className="uppercase font-semibold flex items-center gap-2">
             ■ about me
           </h1>
-          <div className="relative w-16 h-16 md:w-22 md:h-22 lg:size-30 xl:size-36 overflow-hidden lg:rounded-sm">
+          <div className="relative w-16 h-16 md:w-22 md:h-22 lg:w-30 lg:h-30 xl:w-36 xl:h-36 overflow-hidden rounded-sm">
             <Image
-              src={"/assets/profile-pic.jpg"}
+              src="/assets/profile-pic.jpg"
               alt="Vishal Mishra"
               fill
-              className="object-cover scale-125"
+              sizes="(max-width: 768px) 64px,
+               (max-width: 1024px) 88px,
+               (max-width: 1280px) 120px,
+               144px"
+              className="object-cover scale-110"
             />
           </div>
         </div>
@@ -32,7 +36,9 @@ const About = () => {
             card or a larger web project.
           </p>
           <Button
-            className={"bg-neutral-100 hover:text-white hover:bg-[#222] lg:px-6 lg:py-4 lg:text-lg lg:mt-4"}
+            className={
+              "bg-neutral-100 hover:text-white hover:bg-[#222] lg:px-6 lg:py-4 lg:text-lg lg:mt-4"
+            }
           />
         </div>
       </div>

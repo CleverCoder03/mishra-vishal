@@ -3,6 +3,7 @@ import React, { useRef, useState } from "react";
 import { useGSAP } from "@gsap/react";
 import Link from "next/link";
 import gsap from "gsap";
+import { useLenis } from "lenis/react";
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
@@ -13,13 +14,21 @@ const Navbar = () => {
   const navBasedRef = useRef();
   const navRef = useRef();
 
+  const lenis = useLenis();
+
   const navLinks = [
-    { name: "Home", link: "/" },
-    { name: "About me", link: "/#about" },
-    { name: "Projects", link: "/#projects" },
-    { name: "Services", link: "/#services" },
-    { name: "Contact", link: "/#contact" },
+    { name: "Home", link: "/", target: 0 },
+    { name: "About me", link: "/#about", target: "#about" },
+    { name: "Projects", link: "/#projects", target: "#projects" },
+    { name: "Services", link: "/#services", target: "#services" },
+    { name: "Contact", link: "/#contact", target: "#contact" },
   ];
+
+  const handleNavClick = (e, target) => {
+    e.preventDefault();
+    setToggle(false);
+    lenis?.scrollTo(target, { duration: 1.4 });
+  };
 
   useGSAP(() => {
     // Set initial positions without animation
@@ -109,16 +118,16 @@ const Navbar = () => {
             href={"/"}
             className="text-xl font-ppneune-medium font-medium text-white md:text-2xl"
             ref={logoRef}
-            onClick={() => setToggle(false)}
+            onClick={(e) => handleNavClick(e, 0)}
           >
             Vishal Mishra
           </Link>
 
           <div className="hidden md:flex md:gap-6 text-xl font-ppneune-medium text-white">
-            <Link href={"/#about"}>About me</Link>
-            <Link href={"/#projects"}>Projects</Link>
-            <Link href={"/#services"}>Services</Link>
-            <Link href={"/#contact"}>Contact</Link>
+            <Link href={"/#about"} onClick={(e) => handleNavClick(e, "#about")}>About me</Link>
+            <Link href={"/#projects"} onClick={(e) => handleNavClick(e, "#projects")}>Projects</Link>
+            <Link href={"/#services"} onClick={(e) => handleNavClick(e, "#services")}>Services</Link>
+            <Link href={"/#contact"} onClick={(e) => handleNavClick(e, "#contact")}>Contact</Link>
           </div>
 
           {/* Hamburger Menu */}
@@ -145,7 +154,7 @@ const Navbar = () => {
                 key={link.name}
                 href={link.link}
                 ref={(el) => (navLinksRef.current[index] = el)}
-                onClick={() => setToggle(false)}
+                onClick={(e) => handleNavClick(e, link.target)}
               >
                 {link.name}
               </Link>

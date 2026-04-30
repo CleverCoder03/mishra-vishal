@@ -4,6 +4,8 @@
 
 @custom-variant dark (&:is(.dark *));
 
+:root{}
+
 body {
   box-sizing: border-box;
   overflow-x: hidden;
