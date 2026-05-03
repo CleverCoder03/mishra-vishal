@@ -24,7 +24,7 @@ const About = () => {
           </div>
         </div>
         <div className="flex flex-col lg:w-1/2 gap-10">
-          <div className="text-3xl lg:text-4xl font-medium w-2/3">
+          <div className="text-3xl lg:text-4xl font-medium lg:w-3/4">
             <h1>Hi, I&apos;m Vishal.</h1>
             <h1>Web developer from Mumbai, India.</h1>
           </div>
