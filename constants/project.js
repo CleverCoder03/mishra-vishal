@@ -3,8 +3,8 @@
 export const projects = [
   {
     id: 1,
-    title: 'Zodius',
-    description: 'Website in cooperation with B12 Media',
+    title: 'Zodius - Game Launch Portfolio',
+    description: 'A landing page for a new video game',
     bgImage:
       'https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=1600&q=80',
     coverImage:
@@ -14,8 +14,8 @@ export const projects = [
   },
   {
     id: 2,
-    title: 'Vector Mojo',
-    description: 'Holiday planning service',
+    title: 'Vector Mojo - A Cafe Portfolio',
+    description: 'A portfolio for a Cocktail shop',
     bgImage:
       'https://images.unsplash.com/photo-1530841377377-3ff06c0ca713?w=1600&q=80',
     coverImage:
@@ -25,8 +25,8 @@ export const projects = [
   },
   {
     id: 3,
-    title: 'Portfolio',
-    description: 'Coaching & retreat platform',
+    title: 'Freelance Portfolio',
+    description: 'A portfolio of a freelance web developer',
     bgImage:
       'https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=1600&q=80',
     coverImage:
@@ -36,7 +36,7 @@ export const projects = [
   {
     id: 4,
     title: 'Venus Studio',
-    description: 'Clinic website with online booking',
+    description: 'A single-page portfolio for a design studio',
     bgImage:
       'https://images.unsplash.com/photo-1606811971618-4486d14f3f99?w=1600&q=80',
     coverImage:
@@ -45,8 +45,8 @@ export const projects = [
   },
   {
     id: 5,
-    title: 'Vertex',
-    description: 'Local painting service in the US',
+    title: 'Vertex - Real Estate Portfolio',
+    description: 'A portfolio for a real estate agency',
     bgImage:
       'https://images.unsplash.com/photo-1562259949-e8e7689d7828?w=1600&q=80',
     coverImage:
@@ -56,7 +56,7 @@ export const projects = [
   {
     id: 6,
     title: 'Velocity Technology',
-    description: 'Swimming instruction in Toronto',
+    description: 'A portfolio for a Digital Agency from Pune',
     bgImage:
       'https://images.unsplash.com/photo-1530549387789-4c1017266635?w=1600&q=80',
     coverImage:
@@ -66,17 +66,18 @@ export const projects = [
   {
     id: 7,
     title: 'Freund Environmental',
-    description: 'HVAC contractor lead-gen site',
+    description: 'A portfolio for an Environmental Consultancy Firm from Oregon, USA',
     bgImage:
       'https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=1600&q=80',
     coverImage:
       'https://images.unsplash.com/photo-1581094288338-2314dddb7ece?w=1600&q=80',
     link: '#',
+    badge: 'New',
   },
   {
     id: 8,
     title: 'Sequent Media House',
-    description: 'Portfolio for a design studio',
+    description: 'Agency level portfolio for a Media House from Bangalore, India',
     bgImage:
       'https://images.unsplash.com/photo-1497366216548-37526070297c?w=1600&q=80',
     coverImage:

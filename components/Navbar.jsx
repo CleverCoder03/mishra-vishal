@@ -39,11 +39,8 @@ const Navbar = () => {
 
   useGSAP(() => {
     if (toggle) {
-      gsap.fromTo(
+      gsap.to(
         menuRef.current,
-        {
-          yPercent: -100,
-        },
         {
           yPercent: 0,
           duration: 0.8,
@@ -111,7 +108,7 @@ const Navbar = () => {
     <>
       <nav
         ref={navRef}
-        className="fixed w-full z-[101] md:z-1 mix-blend-difference py-7 px-5 md:py-6 md:px-12 lg:py-10 xl:px-18"
+        className="fixed w-full z-101 md:z-1 mix-blend-difference py-7 px-5 md:py-6 md:px-12 lg:py-10 xl:px-18"
       >
         <div className="flex items-center justify-between w-full">
           <Link
@@ -135,7 +132,7 @@ const Navbar = () => {
             <h1
               className={`font-ppneune-medium font-medium text-xl cursor-pointer text-white`}
               ref={colorRef}
-              onClick={() => setToggle((prev) => !prev)}
+              onClick={() => setToggle(!toggle)}
             >
               {toggle ? "Close" : "Menu"}
             </h1>
