@@ -142,7 +142,7 @@ const Navbar = () => {
       <div
         id="menu-bar"
         ref={menuRef}
-        className="bg-[#222] fixed h-dvh w-screen z-100 block md:hidden"
+        className="bg-[#1a1a1a] fixed h-dvh w-screen z-100 block md:hidden"
       >
         <div className="absolute bottom-0 left-0 py-10 px-5 flex flex-col gap-15">
           <div className="flex flex-col gap-5 text-4xl text-white uppercase">

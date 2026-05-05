@@ -4,7 +4,7 @@ const Services = () => {
   return (
     <section
       id="services"
-      className="px-5 py-30 lg:py-40 md:px-12 xl:px-18 border-b bg-[#111] text-white border-gray-400"
+      className="px-5 py-30 lg:py-40 md:px-12 xl:px-18 border-b bg-[#1a1a1a] text-white border-[#666]"
     >
       <div>
         <h1 className="uppercase font-semibold flex items-center gap-2">
@@ -26,8 +26,8 @@ const Services = () => {
               <span className="text-gray-400">0{service.id}.</span>{" "}
               {service.title}
             </h3>
-            <hr className="my-6 border-gray-400" />
-            <p className="text-lg mt-4">{service.description}</p>
+            <hr className="my-6 border-[#666]" />
+            <p className="lg:text-lg mt-4">{service.description}</p>
           </div>
         ))}
       </div>
