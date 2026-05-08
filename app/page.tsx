@@ -5,6 +5,7 @@ import Projects from "../components/Projects";
 import Services from "../components/Services";
 import Sequence from "../components/Sequence";
 import Faq from "../components/Faq";
+import Footer from "../components/Footer";
 
 export default function Home() {
   return (
@@ -25,7 +26,7 @@ export default function Home() {
       {/* FAQ Section */}
       <Faq />
       {/* Footer */}
-      <section className="h-dvh"></section>
+      <Footer />
     </div>
   );
 }
