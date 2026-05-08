@@ -10,7 +10,7 @@ const Sequence = () => {
       </div>
 
       <div className="md:w-2/3 lg:w-1/2 mt-10">
-        <h2 className="text-3xl lg:text-4xl font-medium">
+        <h2 className="text-2xl lg:text-3xl font-medium">
           You should know exactly how a project works with me, here you will
           find an overview of all the important phases and deadlines.
         </h2>

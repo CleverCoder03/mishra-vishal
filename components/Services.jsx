@@ -13,7 +13,7 @@ const Services = () => {
       </div>
 
       <div className="md:w-2/3 lg:w-1/2 mt-10">
-        <h2 className="text-3xl lg:text-4xl font-medium">
+        <h2 className="text-2xl lg:text-3xl font-medium">
           Web design, development, SEO and maintenance. I do that for you so you
           can focus on your core business.
         </h2>
@@ -23,7 +23,7 @@ const Services = () => {
         {services.map((service) => (
           <div key={service.id}>
             <h3 className="text-2xl lg:text-3xl font-medium">
-              <span className="text-gray-400">0{service.id}.</span>{" "}
+              <span className="text-[#666]">0{service.id}.</span>{" "}
               {service.title}
             </h3>
             <hr className="my-6 border-[#666]" />

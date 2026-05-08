@@ -4,6 +4,7 @@ import About from "../components/About";
 import Projects from "../components/Projects";
 import Services from "../components/Services";
 import Sequence from "../components/Sequence";
+import Faq from "../components/Faq";
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
       {/* Sequence Section */}
       <Sequence />
       {/* FAQ Section */}
+      <Faq />
       {/* Footer */}
       <section className="h-dvh"></section>
     </div>
