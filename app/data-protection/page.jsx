@@ -4,7 +4,7 @@ import Footer from "@/components/Footer";
 const page = () => {
   return (
     <>
-      <Navbar />
+      {/* <Navbar /> */}
       <div className="px-5 md:px-12 xl:px-18">
         <div className="py-30 lg:py-40 border-b border-gray-400">
           <div className=" [&_h2]:text-2xl [&_h2]:font-bold [&_p]:text-lg [&_p]:text-gray-600 [&_li]:text-gray-600 [&_h2]:mt-5 [&_h2]:mb-4 [&_h1]:text-3xl [&_h1]:font-bold [&_h1]:mt-10 lg:w-3/4 [&_p]:mt-4 [&_li]:mt-2 [&_ul]:list-disc [&_ul]:ml-5 [&_ul]:mt-4 [&_ul]:mb-4">
@@ -230,7 +230,7 @@ const page = () => {
         </div>
         </div>
       </div>
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 };

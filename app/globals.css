@@ -4,7 +4,9 @@
 
 @custom-variant dark (&:is(.dark *));
 
-:root{}
+:root{
+  scroll-behavior: smooth;
+}
 
 body {
   box-sizing: border-box;

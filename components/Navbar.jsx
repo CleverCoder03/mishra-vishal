@@ -115,16 +115,15 @@ const Navbar = () => {
             href={"/"}
             className="text-xl font-ppneune-medium font-medium text-white md:text-2xl"
             ref={logoRef}
-            onClick={(e) => handleNavClick(e, 0)}
           >
             Vishal Mishra
           </Link>
 
           <div className="hidden md:flex md:gap-6 text-xl font-ppneune-medium text-white">
-            <Link href={"/#about"} onClick={(e) => handleNavClick(e, "#about")}>About me</Link>
-            <Link href={"/#projects"} onClick={(e) => handleNavClick(e, "#projects")}>Projects</Link>
-            <Link href={"/#services"} onClick={(e) => handleNavClick(e, "#services")}>Services</Link>
-            <Link href={"/#contact"} onClick={(e) => handleNavClick(e, "#contact")}>Contact</Link>
+            <Link href={"/#about"}>About me</Link>
+            <Link href={"/#projects"}>Projects</Link>
+            <Link href={"/#services"}>Services</Link>
+            <Link href={"/#contact"}>Contact</Link>
           </div>
 
           {/* Hamburger Menu */}
@@ -151,7 +150,7 @@ const Navbar = () => {
                 key={link.name}
                 href={link.link}
                 ref={(el) => (navLinksRef.current[index] = el)}
-                onClick={(e) => handleNavClick(e, link.target)}
+                onClick={() => setToggle(false)}
               >
                 {link.name}
               </Link>
