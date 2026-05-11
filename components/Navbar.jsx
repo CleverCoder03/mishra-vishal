@@ -3,7 +3,6 @@ import React, { useRef, useState } from "react";
 import { useGSAP } from "@gsap/react";
 import Link from "next/link";
 import gsap from "gsap";
-import { useLenis } from "lenis/react";
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
@@ -14,8 +13,6 @@ const Navbar = () => {
   const navBasedRef = useRef();
   const navRef = useRef();
 
-  const lenis = useLenis();
-
   const navLinks = [
     { name: "Home", link: "/", target: 0 },
     { name: "About me", link: "/#about", target: "#about" },
@@ -23,12 +20,6 @@ const Navbar = () => {
     { name: "Services", link: "/#services", target: "#services" },
     { name: "Contact", link: "/#contact", target: "#contact" },
   ];
-
-  const handleNavClick = (e, target) => {
-    e.preventDefault();
-    setToggle(false);
-    lenis?.scrollTo(target, { duration: 1.4 });
-  };
 
   useGSAP(() => {
     // Set initial positions without animation
