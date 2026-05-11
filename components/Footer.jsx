@@ -27,11 +27,11 @@ const Footer = () => {
         </div>
         <div>
           <p className="text-[#666]">Social</p>
-          <a href="http://" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.linkedin.com/in/clever-coder/" target="_blank" rel="noopener noreferrer">
             Linkedin
           </a>{" "}
           <br />
-          <a href="http://" target="_blank" rel="noopener noreferrer">
+          <a href="https://x.com/CleverCoder0" target="_blank" rel="noopener noreferrer">
             Twitter/X
           </a>
         </div>
