@@ -22,8 +22,8 @@ const Navbar = () => {
   ];
 
   useGSAP(() => {
-    // Set initial positions without animation
-    gsap.set(menuRef.current, { yPercent: -100 });
+    // autoAlpha: 1 removes the "invisible" state AFTER it is safely pushed to -100%
+    gsap.set(menuRef.current, { yPercent: -100, autoAlpha: 1 });
     gsap.set(navLinksRef.current, { yPercent: 100, opacity: 0 });
     gsap.set(navBasedRef.current, { yPercent: 100, opacity: 0 });
   }, []);
@@ -129,10 +129,12 @@ const Navbar = () => {
           </div>
         </div>
       </nav>
+
       <div
         id="menu-bar"
         ref={menuRef}
-        className="bg-[#1a1a1a] fixed h-dvh w-screen z-100 block md:hidden"
+        // CHANGED: Removed -translate-y-full and added 'invisible'
+        className="bg-[#1a1a1a] fixed h-dvh w-screen z-100 block md:hidden invisible"
       >
         <div className="absolute bottom-0 left-0 py-10 px-5 flex flex-col gap-15">
           <div className="flex flex-col gap-5 text-4xl text-white uppercase">
@@ -142,6 +144,8 @@ const Navbar = () => {
                 href={link.link}
                 ref={(el) => (navLinksRef.current[index] = el)}
                 onClick={() => setToggle(false)}
+                // CHANGED: Removed translate-y-full, kept opacity-0
+                className="opacity-0" 
               >
                 {link.name}
               </Link>
@@ -149,7 +153,8 @@ const Navbar = () => {
           </div>
           <div
             ref={navBasedRef}
-            className="text-white text-xl font-ppneune-medium font-medium leading-6"
+            // CHANGED: Removed translate-y-full, kept opacity-0
+            className="text-white text-xl font-ppneune-medium font-medium leading-6 opacity-0"
           >
             <h1>Based in</h1>
             <h1>Mumbai, India</h1>
