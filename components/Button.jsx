@@ -39,13 +39,16 @@ const Button = ({ className }) => {
           />
 
           {/* 2. CONTENT: Ensure h-screen/h-dvh and overflow-y-auto */}
-          <div className="relative h-screen md:h-dvh w-full lg:w-1/2 z-10 bg-white flex flex-col py-10 px-6 md:px-12 xl:px-16 overflow-y-auto overscroll-contain">
+          <div 
+            data-lenis-prevent
+            className="relative h-screen md:h-dvh w-full lg:w-1/2 z-10 bg-white flex flex-col py-10 px-6 md:px-12 xl:px-16 overflow-y-auto overscroll-contain"
+          >
             
             {/* Header row */}
-            <div className="flex items-center justify-between mb-12 shrink-0">
-              <span className="tracking-[0.2em] uppercase text-xs font-medium text-neutral-800">
+            <div className="flex items-center justify-end mb-12 shrink-0">
+              {/* <span className="tracking-[0.2em] uppercase text-xs font-medium text-neutral-800">
                 New Inquiry
-              </span>
+              </span> */}
               <button
                 onClick={() => setToggle(false)}
                 className="text-base font-medium text-neutral-800 hover:text-black transition-colors cursor-pointer"

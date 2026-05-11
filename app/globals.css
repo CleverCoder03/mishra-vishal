@@ -4,10 +4,6 @@
 
 @custom-variant dark (&:is(.dark *));
 
-:root{
-  scroll-behavior: smooth;
-}
-
 body {
   box-sizing: border-box;
   overflow-x: hidden;
