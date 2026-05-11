@@ -6,10 +6,10 @@ export const projects = [
     title: 'Zodius - Game Launch Portfolio',
     description: 'A landing page for a new video game',
     bgImage:
-      'https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=1600&q=80',
+      '/assets/zodius.png',
     coverImage:
-      'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=1600&q=80',
-    link: '#',
+      '/assets/zodius.png',
+    link: 'https://zodius.vercel.app/',
     // badge: 'Available soon',
   },
   {
@@ -17,10 +17,10 @@ export const projects = [
     title: 'Vector Mojo - A Cafe Portfolio',
     description: 'A portfolio for a Cocktail shop',
     bgImage:
-      'https://images.unsplash.com/photo-1530841377377-3ff06c0ca713?w=1600&q=80',
+      '/assets/vector-mojo.jpeg',
     coverImage:
-      'https://images.unsplash.com/photo-1526481280693-3bfa7568e0f3?w=1600&q=80',
-    link: '#',
+      '/assets/vector-mojo.jpeg',
+    link: 'https://vector-mojo.vercel.app/',
     // badge: 'Available soon',
   },
   {
@@ -28,50 +28,50 @@ export const projects = [
     title: 'Freelance Portfolio',
     description: 'A portfolio of a freelance web developer',
     bgImage:
-      'https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=1600&q=80',
+      '/assets/freelancer-portfolio.png',
     coverImage:
-      'https://images.unsplash.com/photo-1551434678-e076c223a692?w=1600&q=80',
-    link: '#',
+      '/assets/freelancer-portfolio.png',
+    link: 'https://vishalmishra.vercel.app/',
   },
   {
     id: 4,
     title: 'Venus Studio',
     description: 'A single-page portfolio for a design studio',
     bgImage:
-      'https://images.unsplash.com/photo-1606811971618-4486d14f3f99?w=1600&q=80',
+      '/assets/venus-studio.png',
     coverImage:
-      'https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=1600&q=80',
-    link: '#',
+      '/assets/venus-studio.png',
+    link: 'https://venus-studio.vercel.app/',
   },
   {
     id: 5,
     title: 'Vertex - Real Estate Portfolio',
     description: 'A portfolio for a real estate agency',
     bgImage:
-      'https://images.unsplash.com/photo-1562259949-e8e7689d7828?w=1600&q=80',
+      '/assets/vertex.png',
     coverImage:
-      'https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=1600&q=80',
-    link: '#',
+      '/assets/vertex.png',
+    link: 'https://vertex-real-estate-agency.vercel.app/',
   },
   {
     id: 6,
     title: 'Velocity Technology',
     description: 'A portfolio for a Digital Agency from Pune',
     bgImage:
-      'https://images.unsplash.com/photo-1530549387789-4c1017266635?w=1600&q=80',
+      '/assets/velocity-studio.png',
     coverImage:
-      'https://images.unsplash.com/photo-1438029071396-1e831a7fa6d8?w=1600&q=80',
-    link: '#',
+      '/assets/velocity-studio.png',
+    link: 'https://velocity-studio.vercel.app/',
   },
   {
     id: 7,
     title: 'Freund Environmental',
     description: 'A portfolio for an Environmental Consultancy Firm from Oregon, USA',
     bgImage:
-      'https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=1600&q=80',
+      '/assets/freund-environmental.png',
     coverImage:
-      'https://images.unsplash.com/photo-1581094288338-2314dddb7ece?w=1600&q=80',
-    link: '#',
+      '/assets/freund-environmental.png',
+    link: 'https://freundenvironmental.com/',
     badge: 'New',
   },
   {
@@ -79,10 +79,10 @@ export const projects = [
     title: 'Sequent Media House',
     description: 'Agency level portfolio for a Media House from Bangalore, India',
     bgImage:
-      'https://images.unsplash.com/photo-1497366216548-37526070297c?w=1600&q=80',
+      '/assets/sequent-media-thumbnail.png',
     coverImage:
-      'https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=1600&q=80',
-    link: '#',
+      '/assets/sequent-media-thumbnail.png',
+    link: 'https://sequentmediahouse.com/',
     badge: 'New',
   },
 ]
