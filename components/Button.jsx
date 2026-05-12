@@ -41,7 +41,7 @@ const Button = ({ className }) => {
           {/* 2. CONTENT: Ensure h-screen/h-dvh and overflow-y-auto */}
           <div 
             data-lenis-prevent
-            className="relative h-screen md:h-dvh w-full lg:w-1/2 z-10 bg-white flex flex-col py-18 px-6 md:px-12 xl:px-16 overflow-y-auto overscroll-contain"
+            className="relative h-screen md:h-dvh w-full lg:w-1/2 z-10 bg-white flex flex-col py-18 lg:py-10 px-6 md:px-12 xl:px-16 overflow-y-auto overscroll-contain"
           >
             
             {/* Header row */}
