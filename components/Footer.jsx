@@ -1,5 +1,6 @@
 import Button from "./Button";
 import Link from "next/link";
+import { ManualTextRoll } from "./ManualTextRoll";
 
 const Footer = () => {
   return (
@@ -20,25 +21,41 @@ const Footer = () => {
       <div className="py-15 md:py-20 text-xl lg:text-2xl font-medium flex flex-col lg:flex-row lg:justify-between gap-10">
         <div>
           <p className="text-[#666]">Contact</p>
-          <a href="tel:+917249084224">+91 7249084224</a> <br />
+          <a href="tel:+917249084224">
+            <ManualTextRoll>+91 7249084224</ManualTextRoll>
+          </a>{" "}
+          <br />
           <a href="mailto:clevercoder0307@gmail.com">
-            clevercoder0307@gmail.com
+            <ManualTextRoll>clevercoder0307@gmail.com</ManualTextRoll>
           </a>
         </div>
         <div>
           <p className="text-[#666]">Social</p>
-          <a href="https://www.linkedin.com/in/clever-coder/" target="_blank" rel="noopener noreferrer">
-            Linkedin
+          <a
+            href="https://www.linkedin.com/in/clever-coder/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <ManualTextRoll>Linkedin</ManualTextRoll>
           </a>{" "}
           <br />
-          <a href="https://x.com/CleverCoder0" target="_blank" rel="noopener noreferrer">
-            Twitter/X
+          <a
+            href="https://x.com/CleverCoder0"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <ManualTextRoll>Twitter/X</ManualTextRoll>
           </a>
         </div>
         <div>
           <p className="text-[#666]">&copy; 2026</p>
-          <Link href="/imprint">Imprint</Link> <br />
-          <Link href="/data-protection">Data Protection</Link>
+          <Link href="/imprint">
+            <ManualTextRoll>Imprint</ManualTextRoll>
+          </Link>{" "}
+          <br />
+          <Link href="/data-protection">
+            <ManualTextRoll>Data Protection</ManualTextRoll>
+          </Link>
         </div>
       </div>
 

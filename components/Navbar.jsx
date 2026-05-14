@@ -4,6 +4,8 @@ import { useGSAP } from "@gsap/react";
 import Link from "next/link";
 import gsap from "gsap";
 
+import { ManualTextRoll } from "./ManualTextRoll";
+
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
   const menuRef = useRef(null);
@@ -111,10 +113,18 @@ const Navbar = () => {
           </Link>
 
           <div className="hidden md:flex md:gap-6 text-xl font-ppneune-medium text-white">
-            <Link href={"/#about"}>About me</Link>
-            <Link href={"/#projects"}>Projects</Link>
-            <Link href={"/#services"}>Services</Link>
-            <Link href={"/#contact"}>Contact</Link>
+            <Link href={"/#about"}>
+              <ManualTextRoll>About me</ManualTextRoll>
+            </Link>
+            <Link href={"/#projects"}>
+              <ManualTextRoll>Projects</ManualTextRoll>
+            </Link>
+            <Link href={"/#services"}>
+              <ManualTextRoll>Services</ManualTextRoll>
+            </Link>
+            <Link href={"/#contact"}>
+              <ManualTextRoll>Contact</ManualTextRoll>
+            </Link>
           </div>
 
           {/* Hamburger Menu */}
