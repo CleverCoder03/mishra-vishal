@@ -1,5 +1,6 @@
 import Button from "./Button";
 import AboutImage from "./AboutImage";
+import CharReveal from "./CharReveal";
 
 const About = () => {
   return (
@@ -16,8 +17,10 @@ const About = () => {
         </div>
         <div className="flex flex-col lg:w-1/2 gap-10">
           <div className="text-3xl lg:text-4xl font-medium lg:w-3/4">
-            <h1>Hi, I&apos;m Vishal.</h1>
+            <CharReveal staggerAmount={0.02}>
+              <h1>Hi, I&apos;m Vishal.</h1>
             <h1>Web developer from Mumbai, India.</h1>
+            </CharReveal>
           </div>
           <p className="text-lg md:text-xl lg:w-2/3">
             What started as a hobby is now my job. I guide you from the initial

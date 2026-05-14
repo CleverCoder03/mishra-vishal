@@ -2,6 +2,8 @@ import Image from "next/image";
 import globeSVG from "@/public/assets/globe.svg";
 import { Component } from "./ui/etheral-shadow";
 import Button from "./Button";
+import CharReveal from "./CharReveal";
+import LineAnimation from "./LineAnimation";
 
 const Hero = () => {
   return (
@@ -22,15 +24,17 @@ const Hero = () => {
         <div className="flex flex-col gap-15">
           <div className="flex flex-col lg:flex-row lg:justify-between lg:items-end gap-5">
             <div className="text-6xl lg:text-8xl xl:text-9xl">
-              <h1>Freelance</h1>
-              <h1>Web Developer</h1>
+              <CharReveal>
+                <h1>Freelance</h1>
+                <h1>Web Developer</h1>
+              </CharReveal>
             </div>
             <div className="flex items-center gap-2 text-lg md:text-xl">
               <Image src={globeSVG} alt="Globe" className="invert size-5" />
               Mumbai, India
             </div>
           </div>
-          <hr />
+          <LineAnimation />
           <div className="flex flex-col lg:flex-row lg:justify-between lg:items-center gap-5">
             <h1 className="text-lg md:text-xl">
               I&apos;ll help you make a lasting impression online.
