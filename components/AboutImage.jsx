@@ -23,7 +23,7 @@ const AboutImage = () => {
           ease: [0.83, 0, 0.17, 1],
           delay: 0.3,
         }}
-        className="w-full h-full"
+        className="relative w-full h-full"
       >
         <Image
           src="/assets/profile-pic.jpg"

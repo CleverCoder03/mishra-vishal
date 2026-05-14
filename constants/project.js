@@ -6,9 +6,9 @@ export const projects = [
     title: 'Zodius - Game Launch Portfolio',
     description: 'A landing page for a new video game',
     bgImage:
-      '/assets/zodius.png',
+      '/assets/zodius.jpg',
     coverImage:
-      '/assets/zodius.png',
+      '/assets/zodius.jpg',
     link: 'https://zodius.vercel.app/',
     // badge: 'Available soon',
   },
@@ -17,9 +17,9 @@ export const projects = [
     title: 'Vector Mojo - A Cafe Portfolio',
     description: 'A portfolio for a Cocktail shop',
     bgImage:
-      '/assets/vector-mojo.jpeg',
+      '/assets/vector-mojo.jpg',
     coverImage:
-      '/assets/vector-mojo.jpeg',
+      '/assets/vector-mojo.jpg',
     link: 'https://vector-mojo.vercel.app/',
     // badge: 'Available soon',
   },
@@ -28,9 +28,9 @@ export const projects = [
     title: 'Freelance Portfolio',
     description: 'A portfolio of a freelance web developer',
     bgImage:
-      '/assets/freelancer-portfolio.png',
+      '/assets/freelancer-portfolio.jpg',
     coverImage:
-      '/assets/freelancer-portfolio.png',
+      '/assets/freelancer-portfolio.jpg',
     link: 'https://vishalmishra.vercel.app/',
   },
   {
@@ -38,9 +38,9 @@ export const projects = [
     title: 'Venus Studio',
     description: 'A single-page portfolio for a design studio',
     bgImage:
-      '/assets/venus-studio.png',
+      '/assets/venus-studio.jpg',
     coverImage:
-      '/assets/venus-studio.png',
+      '/assets/venus-studio.jpg',
     link: 'https://venus-studio.vercel.app/',
   },
   {
@@ -48,9 +48,9 @@ export const projects = [
     title: 'Vertex - Real Estate Portfolio',
     description: 'A portfolio for a real estate agency',
     bgImage:
-      '/assets/vertex.png',
+      '/assets/vertex.jpg',
     coverImage:
-      '/assets/vertex.png',
+      '/assets/vertex.jpg',
     link: 'https://vertex-real-estate-agency.vercel.app/',
   },
   {
@@ -58,9 +58,9 @@ export const projects = [
     title: 'Velocity Technology',
     description: 'A portfolio for a Digital Agency from Pune',
     bgImage:
-      '/assets/velocity-studio.png',
+      '/assets/velocity-studio.jpg',
     coverImage:
-      '/assets/velocity-studio.png',
+      '/assets/velocity-studio.jpg',
     link: 'https://velocity-studio.vercel.app/',
   },
   {
@@ -68,9 +68,9 @@ export const projects = [
     title: 'Freund Environmental',
     description: 'A portfolio for an Environmental Consultancy Firm from Oregon, USA',
     bgImage:
-      '/assets/freund-environmental.png',
+      '/assets/freund-environmental.jpg',
     coverImage:
-      '/assets/freund-environmental.png',
+      '/assets/freund-environmental.jpg',
     link: 'https://freundenvironmental.com/',
     badge: 'New',
   },
@@ -79,9 +79,9 @@ export const projects = [
     title: 'Sequent Media House',
     description: 'Agency level portfolio for a Media House from Bangalore, India',
     bgImage:
-      '/assets/sequent-media-thumbnail.png',
+      '/assets/sequent-media-thumbnail.jpg',
     coverImage:
-      '/assets/sequent-media-thumbnail.png',
+      '/assets/sequent-media-thumbnail.jpg',
     link: 'https://sequentmediahouse.com/',
     badge: 'New',
   },
