@@ -19,7 +19,7 @@ const Services = () => {
   const itemVariants = {
     hidden: {
       opacity: 0,
-      y: 60,
+      y: 200,
     },
     visible: {
       opacity: 1,
@@ -43,7 +43,7 @@ const Services = () => {
       </div>
 
       <div className="md:w-2/3 lg:w-1/2 mt-10">
-        <CharReveal staggerAmount={0.02}>
+        <CharReveal staggerAmount={0.01}>
           <h2 className="text-2xl lg:text-3xl font-medium">
             Web design, development, SEO and maintenance. I do that for you so
             you can focus on your core business.

@@ -26,7 +26,7 @@ const Faq = () => {
 
       <div className="flex flex-col lg:flex-row gap-25 lg:gap-0">
         <div className="lg:w-1/2 mt-10">
-          <CharReveal staggerAmount={0.02}>
+          <CharReveal staggerAmount={0.01}>
             <h2 className="md:w-3/4 text-2xl lg:text-3xl font-medium">
             Perhaps you have a few questions, Let&apos;s start together. Here
             you&apos;ll find the most important answers to frequently asked

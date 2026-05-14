@@ -17,7 +17,7 @@ const About = () => {
         </div>
         <div className="flex flex-col lg:w-1/2 gap-10">
           <div className="text-3xl lg:text-4xl font-medium lg:w-3/4">
-            <CharReveal staggerAmount={0.02}>
+            <CharReveal staggerAmount={0.01}>
               <h1>Hi, I&apos;m Vishal.</h1>
             <h1>Web developer from Mumbai, India.</h1>
             </CharReveal>
